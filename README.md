@@ -3,8 +3,10 @@
 
 
 
-## GTX1080 Driver installation 
+## Ubuntu 14.04
+ - ubuntu 14.04 do it yourself!
 
+## GTX1080 Driver installation 
  - sudo apt-get update 
  - sudo apt-get upgrade 
  - sudo add-apt-repository ppa:graphics-drivers/ppa 

@@ -41,15 +41,14 @@ echo xfce4-session >~/.xsession
 sudo nano /etc/xrdp/startwm.sh 
 
 ======================================= 
+<code>
 #!/bin/sh 
-
 if [ -r /etc/default/locale ]; then 
   . /etc/default/locale 
   export LANG LANGUAGE 
 fi 
-
 startxfce4 
-
+</code>
 ======================================= 
 sudo service xrdp restart
 

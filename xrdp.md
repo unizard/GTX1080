@@ -1,11 +1,5 @@
 
 
-
-# xrdp issues
-- http://aloftcat.tistory.com/88 
-
-
-
 # [xrdp & mate] 
 
 $ sudo apt-get update <br />
@@ -71,6 +65,10 @@ port=ask 라고 하면 매번 접속시에 포트번호를 물어보고
 고정하고 싶으면 고정하고;;
 
 
+
+
+# xrdp issues
+http://aloftcat.tistory.com/88 
 
 
 

@@ -1,6 +1,5 @@
  
-### requirement: ubuntu 14.04 + GTX1080 + CUDA8.0 + CUDNNv5 
-
+### requirement: ubuntu 14.04 + GTX1080 + CUDA8.0 + CUDNNv5 [[Ref.](http://hamait.tistory.com/513)]
 
 ## preparing 
 

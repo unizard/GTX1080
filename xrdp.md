@@ -1,22 +1,20 @@
 
 
-=============================== 
-xrdp 각종 문제 해결 모음 
-=============================== 
 
-http://aloftcat.tistory.com/88 
+# xrdp issues
+- http://aloftcat.tistory.com/88 
 
 
 
-[원격설정 - mate] 
+# [원격설정 - mate] 
 
-$ sudo apt-add-repository ppa:ubuntu-mate-dev/ppa 
-$ sudo apt-add-repository ppa:ubuntu-mate-dev/trusty-mate 
-$ sudo apt-get update 
-$ sudo apt-get upgrade 
-$ sudo apt-get install ubuntu-mate-core ubuntu-mate-desktop 
-$ echo mate-session > ~/.xsession 
-$ sudo service xrdp restart 
+$ sudo apt-add-repository ppa:ubuntu-mate-dev/ppa <br />
+$ sudo apt-add-repository ppa:ubuntu-mate-dev/trusty-mate <br />
+$ sudo apt-get update <br />
+$ sudo apt-get upgrade <br />
+$ sudo apt-get install ubuntu-mate-core ubuntu-mate-desktop <br />
+$ echo mate-session > ~/.xsession <br />
+$ sudo service xrdp restart <br />
 
 ======================================= 
 
@@ -30,16 +28,16 @@ fi
  mate-session <- 반드시 추가 
 ```
 ======================================= 
-sudo service xrdp restart
+sudo service xrdp restart <br />
 
-관리자 16-11-19 20:13 답변  
-[원격설정 - xfce4] 
 
-sudo apt-get update 
-sudo apt-get install xrdp 
-sudo apt-get install xfce4 
-echo xfce4-session >~/.xsession 
-sudo nano /etc/xrdp/startwm.sh 
+# [원격설정 - xfce4] 
+
+sudo apt-get update <br />
+sudo apt-get install xrdp <br />
+sudo apt-get install xfce4 <br />
+echo xfce4-session >~/.xsession <br />
+sudo nano /etc/xrdp/startwm.sh <br />
 
 ======================================= 
 ```
@@ -51,19 +49,15 @@ fi
 startxfce4 
 ```
 ======================================= 
-sudo service xrdp restart
+sudo service xrdp restart <br />
 
 
 
-
-
-
-=================== 
-xrdp 로그인 환경설정 
-=================== 
+# xrdp login setting
 
 sudo gedit /etc/xrdp/xrdp.ini 
 
+```
 [xrdp1] 
 name=sesman-Xvnc 
 lib=libvnc.so 
@@ -71,7 +65,7 @@ username=ask
 passwod=ask 
 ip=127.0.0.1 
 port=ask-1 
-
+```
 
 port=ask 라고 하면 매번 접속시에 포트번호를 물어보고 
 -1로 한 이유는 새로운 세션을 생성하기 위한거고 

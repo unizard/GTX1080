@@ -6,7 +6,7 @@
 
 
 
-# [원격설정 - mate] 
+# [xrdp - mate] 
 
 $ sudo apt-add-repository ppa:ubuntu-mate-dev/ppa <br />
 $ sudo apt-add-repository ppa:ubuntu-mate-dev/trusty-mate <br />
@@ -16,7 +16,6 @@ $ sudo apt-get install ubuntu-mate-core ubuntu-mate-desktop <br />
 $ echo mate-session > ~/.xsession <br />
 $ sudo service xrdp restart <br />
 
-======================================= 
 
 ``` 
 #!/bin/sh 
@@ -27,11 +26,11 @@ fi
 
  mate-session <- 반드시 추가 
 ```
-======================================= 
+
 sudo service xrdp restart <br />
 
 
-# [원격설정 - xfce4] 
+# [xrdp - xfce4] 
 
 sudo apt-get update <br />
 sudo apt-get install xrdp <br />
@@ -39,7 +38,6 @@ sudo apt-get install xfce4 <br />
 echo xfce4-session >~/.xsession <br />
 sudo nano /etc/xrdp/startwm.sh <br />
 
-======================================= 
 ```
 #!/bin/sh 
 if [ -r /etc/default/locale ]; then 
@@ -48,7 +46,6 @@ if [ -r /etc/default/locale ]; then
 fi 
 startxfce4 
 ```
-======================================= 
 sudo service xrdp restart <br />
 
 

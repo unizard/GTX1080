@@ -6,8 +6,10 @@
 
 
 
-# [xrdp - mate] 
+# [xrdp & mate] 
 
+$ sudo apt-get update <br />
+$ sudo apt-get install xrdp <br />
 $ sudo apt-add-repository ppa:ubuntu-mate-dev/ppa <br />
 $ sudo apt-add-repository ppa:ubuntu-mate-dev/trusty-mate <br />
 $ sudo apt-get update <br />
@@ -27,16 +29,16 @@ fi
  mate-session <- 반드시 추가 
 ```
 
-sudo service xrdp restart <br />
+$ sudo service xrdp restart <br />
 
 
-# [xrdp - xfce4] 
+# [xrdp & xfce4] 
 
-sudo apt-get update <br />
-sudo apt-get install xrdp <br />
-sudo apt-get install xfce4 <br />
-echo xfce4-session >~/.xsession <br />
-sudo nano /etc/xrdp/startwm.sh <br />
+$ sudo apt-get update <br />
+$ sudo apt-get install xrdp <br />
+$ sudo apt-get install xfce4 <br />
+$ echo xfce4-session >~/.xsession <br />
+$ sudo gedit /etc/xrdp/startwm.sh <br />
 
 ```
 #!/bin/sh 
@@ -46,13 +48,13 @@ if [ -r /etc/default/locale ]; then
 fi 
 startxfce4 
 ```
-sudo service xrdp restart <br />
+$ sudo service xrdp restart <br />
 
 
 
 # xrdp login setting
 
-sudo gedit /etc/xrdp/xrdp.ini 
+$ sudo gedit /etc/xrdp/xrdp.ini 
 
 ```
 [xrdp1] 

@@ -26,10 +26,10 @@
  - gedit ~/.bashrc 
 
      // insert following two path 
-     
-     export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}} 
-     
-     export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}} 
+        
+  
+     export PATH=/usr/local/cuda-8.0/bin:$PATH
+     export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH
 
  - sudo apt-get install nvidia-modprobe ( for cuda  )
  - sudo reboot 

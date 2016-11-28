@@ -19,15 +19,16 @@ $ echo mate-session > ~/.xsession
 $ sudo service xrdp restart 
 
 ======================================= 
-#!/bin/sh 
 
+``` 
+#!/bin/sh 
 if [ -r /etc/default/locale ]; then 
   . /etc/default/locale 
   export LANG LANGUAGE 
 fi 
 
-mate-session <- 반드시 추가 
-
+ mate-session <- 반드시 추가 
+```
 ======================================= 
 sudo service xrdp restart
 
@@ -41,14 +42,14 @@ echo xfce4-session >~/.xsession
 sudo nano /etc/xrdp/startwm.sh 
 
 ======================================= 
-<code>
+```
 #!/bin/sh 
 if [ -r /etc/default/locale ]; then 
   . /etc/default/locale 
   export LANG LANGUAGE 
 fi 
 startxfce4 
-</code>
+```
 ======================================= 
 sudo service xrdp restart
 

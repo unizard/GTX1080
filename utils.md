@@ -24,7 +24,7 @@ port 1024
 ### lock
 $ sudo apt-get install sshfs <br />
 $ sshfs -p 1024 user01@143.248.39.117:/data2/ ~/works_177   <br />
-( port 2014, login id : user01 ) <br />
+( port 2014, login id : userxx ) <br />
 
 ### unlock
 $ fusermount -u ./works_177 <br />
